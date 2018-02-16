@@ -19,13 +19,15 @@
 
     <!--Import Google Font-->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Antic+Slab|Monoton|Rock+Salt" rel="stylesheet">
 
     <title>Friend Finder</title>
 </head>
 
 <body style="font-family: 'Josefin Sans', sans-serif;">
-    <div class="jumbotron" style="text-align:center">
-        <h1>Friend Finder</h1>
+    	<img src="images/friendFinder.gif" style="width:100%; height:250px; background-color:black">
+    <div class="jumbotron" style="text-align:center; background-color:black; color:white">
+            <h1 style="font-family: 'Monoton', cursive;">Friend Finder</h1>
         <p>Complete this survey to look for your perfect friend.</p>
         <hr>
 
@@ -48,6 +50,7 @@
 
     </div>
 
+   
 
     <div class="container">
         <div class="row">
@@ -55,7 +58,7 @@
                 <div class="input-field col s12">
                     <h3>Question 1</h3>
                     <h5>Do you believe in ghost?</h5>
-                    <select id="question1">
+                    <select class="question" id="question1">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
@@ -70,7 +73,7 @@
                 <div class="input-field col s12">
                     <h3>Question 6</h3>
                     <h5>Do you love animals?</h5>
-                    <select id="question6">
+                    <select class="question" id="question6">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
@@ -87,7 +90,7 @@
                 <div class="input-field col s12">
                     <h3>Question 2</h3>
                     <h5>Are you afraid of the dark?</h5>
-                    <select id="question2">
+                    <select class="question" id="question2">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
@@ -102,7 +105,7 @@
                 <div class="input-field col s12">
                     <h3>Question 7</h3>
                     <h5>Do you day dream a lot?</h5>
-                    <select id="question7">
+                    <select  class="question" id="question7">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
@@ -119,7 +122,7 @@
                 <div class="input-field col s12">
                     <h3>Question 3</h3>
                     <h5>Do you believe that we are not alone in the universe?</h5>
-                    <select id="question3">
+                    <select class="question" id="question3">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
@@ -134,7 +137,7 @@
                 <div class="input-field col s12">
                     <h3>Question 8</h3>
                     <h5>You rarely get carried away by fantasies and ideas.</h5>
-                    <select id="question8">
+                    <select class="question" id="question8">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
@@ -152,7 +155,7 @@
                 <div class="input-field col s12">
                     <h3>Question 4</h3>
                     <h5>Do you find easy to work in groups?</h5>
-                    <select id="question4">
+                    <select  class="question" id="question4">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
@@ -167,7 +170,7 @@
                 <div class="input-field col s12">
                     <h3>Question 9</h3>
                     <h5>You enjoy having some alone time</h5>
-                    <select id="question9">
+                    <select class="question" id="question9">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
@@ -185,7 +188,7 @@
                 <div class="input-field col s12">
                     <h3>Question 5</h3>
                     <h5>Do you rely more on your experience than your imagination</h5>
-                    <select id="question5">
+                    <select class="question" id="question5">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
@@ -200,7 +203,7 @@
                 <div class="input-field col s12">
                     <h3>Question 10</h3>
                     <h5>Do you enjoy outdoor time?</h5>
-                    <select id="question10">
+                    <select class="question" id="question10">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
@@ -289,7 +292,12 @@
                 $("#userMatchImage").attr("src", data.matchImage);
                 $('#modal1').modal('open');
             });
+           
         });
+
+        
+
+
     </script>
 </body>
 
